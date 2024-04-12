@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
 let name = await conn.getName(m.sender)
-let thumb = 'https://telegra.ph/file/e7e06f759a0549bff9a64.jpg'
+let thumb = 'https://telegra.ph/file/974aa388af1165069f753.jpg'
 let dann = `Hai ${name} 👋\n\nAda yang bisa ${namebot} bantu?`
 conn.sendMessage(m.chat, {
 text: dann,
