@@ -20,7 +20,7 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 // Informasi
 global.namebot = "chitsuBot";
 global.version = '1.0.0'
-global.sgc = 'https://chat.whatsapp.com/K4C735CSEsWAtAFsRWDI4B'
+global.sgc = 'https://chat.whatsapp.com/Iu96JySC9ZzBGJNEu0qNm6'
 global.thumb = 'https://telegra.ph/file/974aa388af1165069f753.jpg'
 global.swa = '6287729860010'
 global.wm = "shinomiya Tech Bot WhatsApp"

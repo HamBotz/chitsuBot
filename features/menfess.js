@@ -31,9 +31,3 @@ handler.command = /^(menfess|menfes)$/i
 handler.private = true
 
 module.exports = handler
-
-/*
-  * Dann Official
-  * ig: @dannalwaysalone
-  * anjay alok
-*/

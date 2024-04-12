@@ -1,8 +1,3 @@
-/**
- * DannTeam
- * Instagram: @dannalwaysalone
-*/
-
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@whiskeysockets/baileys')
 let fs = require('fs')
 let path = require('path')

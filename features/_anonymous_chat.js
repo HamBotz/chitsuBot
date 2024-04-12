@@ -20,9 +20,3 @@ module.exports = {
         return !0
     }
 }
-
-/*
-   * Dann Peler
-   * Respon anonymous
-   * Follow instagram: @dannalwaysalone
-*/

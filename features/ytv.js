@@ -1,13 +1,14 @@
 const ytdl = require("ytdl-core");
 const yts = require("yt-search");
 
-
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   try {
-    
-
     if (!text) {
       return m.reply(`Masukkan URL!\n\nContoh: *${usedPrefix + command} https://youtube.com/xxx*`)
+    }
+
+    if (!text.includes('youtube.com') && !text.includes('youtu.be')) {
+      return m.reply(`Masukkan URL YouTube!\n\nContoh: *${usedPrefix + command} https://youtube.com/xxx*`)
     }
 
     let videoUrl = text.trim();
@@ -41,7 +42,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         m.chat,
         videoFormat.url,
         `${info.videoDetails.title}.mp4`,
-        `◦ *Title:* ${info.videoDetails.title}\n◦ *Duration:* ${info.videoDetails.lengthSeconds} seconds\n\n${global.footer}`,
+        `◦ *Title:* ${info.videoDetails.title}\n◦ *Duration:* ${info.videoDetails.lengthSeconds} seconds\n\n${wm}`,
         m
       );
     } catch (e) {
@@ -54,8 +55,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   }
 };
 
-handler.command = /^ytmp4|ytv$/i;
-handler.help = ["ytmp4 /link"];
+handler.command = handler.help = ["ytv", "ytmp4"]
 handler.tags = ["downloader"];
 handler.limit = true;
 
