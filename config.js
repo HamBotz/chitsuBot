@@ -21,7 +21,6 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 global.namebot = "chitsuBot";
 global.version = '1.0.0'
 global.sgc = 'https://chat.whatsapp.com/K4C735CSEsWAtAFsRWDI4B'
-
 global.thumb = 'https://telegra.ph/file/974aa388af1165069f753.jpg'
 global.swa = '6287729860010'
 global.wm = "shinomiya Tech Bot WhatsApp"
@@ -35,6 +34,7 @@ global.fpagedoc = '999'
 // Watermark
 global.wait = "```Loading...```"
 global.eror = "`! Error Command Failed`"
+global.denied = "`! Error Command Failed`"
 global.packname = "chitsuBot";
 global.author = "ham"
 
