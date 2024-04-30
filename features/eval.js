@@ -1,11 +1,3 @@
-/*####################################
-                 KAGUYA SAMA
-             MADE BY LEXIC TEAM
-       
-✅ WhatsApp: wa.me/6281389103794
-👥 Github: https://github.com/LEXIC-TEAM
-#####################################*/
-
 let syntaxerror = require('syntax-error')
 let util = require('util')
 
