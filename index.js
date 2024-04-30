@@ -7,7 +7,6 @@ const path = require("path");
 const fs = require("fs");
 const { handleUnhandledRejection, handleUncaughtException } = require("./lib/fix");
 const moment = require("moment");
-const { joinverify } = require("./lib/verify");
 
 const PORT = process.env.PORT || 8080;
 
@@ -39,7 +38,6 @@ async function start(file) {
   if (isRunning) return;
 
   try {
-    if (!(await joinverify())) return;
     isRunning = true;
     var args = [path.join(__dirname, file), ...process.argv.slice(2)];
     var p = spawn(process.argv[0], args, {
