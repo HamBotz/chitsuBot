@@ -981,15 +981,15 @@ ketik *.on delete* untuk mematikan pesan ini
 global.dfail = (type, m, conn) => {
     let tdan = 'https://telegra.ph/file/5a49e56d835f691519140.jpg'
     let msg = {
-        rowner: `${global.danied}\n\nPerintah ini hanya dapat digunakan oleh *Real Owner*!`,
-        owner: `${global.danied}\n\nPerintah ini hanya dapat digunakan oleh *Owner*!`,
-        mods: `${global.danied}\n\nPerintah ini hanya dapat digunakan oleh *Moderator*!`,
-        banned: `${global.danied}\n\nPerintah ini hanya untuk pengguna yang terbanned..`,
-        group: `${global.danied}\n\nPerintah ini hanya dapat digunakan di grup!`,
-        private: `${global.danied}\n\nPerintah ini hanya dapat digunakan di Chat Pribadi!`,
-        admin: `${global.danied}\n\nPerintah ini hanya untuk *Admin* grup!`,
-        botAdmin: `${global.danied}\n\nJadikan bot sebagai *Admin* untuk menggunakan perintah ini!`,
-        restrict: `${global.danied}\n\nFitur ini di *disable*!`
+        rowner: `${global.denied}\n\nPerintah ini hanya dapat digunakan oleh *Real Owner*!`,
+        owner: `${global.denied}\n\nPerintah ini hanya dapat digunakan oleh *Owner*!`,
+        mods: `${global.denied}\n\nPerintah ini hanya dapat digunakan oleh *Moderator*!`,
+        banned: `${global.denied}\n\nPerintah ini hanya untuk pengguna yang terbanned..`,
+        group: `${global.denied}\n\nPerintah ini hanya dapat digunakan di grup!`,
+        private: `${global.denied}\n\nPerintah ini hanya dapat digunakan di Chat Pribadi!`,
+        admin: `${global.denied}\n\nPerintah ini hanya untuk *Admin* grup!`,
+        botAdmin: `${global.denied}\n\nJadikan bot sebagai *Admin* untuk menggunakan perintah ini!`,
+        restrict: `${global.denied}\n\nFitur ini di *disable*!`
     }[type]
     if (msg) return conn.sendMessage(m.chat, {
 text: msg,
@@ -1025,7 +1025,7 @@ if (msgg) {
 }
 
     let msg2 = {
-        premium: `${global.danied}\n\nPerintah ini hanya dapat digunakan oleh *Premium*!`
+        premium: `${global.denied}\n\nPerintah ini hanya dapat digunakan oleh *Premium*!`
     }[type]
     if (msg2) return conn.sendMessage(m.chat, {
 text: msg2,

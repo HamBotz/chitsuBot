@@ -105,7 +105,7 @@ function isNumber(x) {
 }
 
 function generateRandomCharacter() {
-    const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    const characters = '0123456789';
     return characters[Math.floor(Math.random() * characters.length)];
 }
 
