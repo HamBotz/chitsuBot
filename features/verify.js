@@ -6,7 +6,7 @@ let handler = async (m, { text, usedPrefix }) => {
   user.registered = true;
   let sn = createHash("md5").update(m.sender).digest("hex");
   let p = '```Selamat Kamu sudah Mendaftar```\n\n•Sn Kamu: *${sn}*';
-  conn.reply( p, m)
+  conn.reply(m.chat, p, '')
   /*const arr = [
     { text: `*[ V ]*\n\n${p}`, timeout: 100 },
     { text: `*[ V E ]*\n\n${p}`, timeout: 100 },

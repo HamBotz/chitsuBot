@@ -1006,7 +1006,7 @@ renderLargerThumbnail: true
 }}})
 let dann = `@${m.sender.split("@")[0]}`;
 let msgg = {
-    unreg: `Hai *${dann}* Anda belum terdaftar!\n\nContoh: *#daftar Manusia.16*`
+    unreg: `Hai *${dann}* Anda belum terdaftar!\n\nContoh: *#daftar Manusia.16*\nverify (Otomatis)`
 }[type];
 
 if (msgg) {
