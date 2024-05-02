@@ -1,4 +1,3 @@
-console.log('✅ Starting.....')
 require('./config')
 const os = require('os');
 const cluster = require("cluster");
